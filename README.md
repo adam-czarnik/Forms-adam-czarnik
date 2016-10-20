@@ -8,7 +8,7 @@ Create a simple website that has a minimum of three pages: a homepage, a registr
 
 ## Resources
 
-[W3Schools](http://www.w3schools.com/html/html_forms.asp), [web searches](https://www.reddit.com/r/web_design/search?q=forms&restrict_sr=on), [codecademy](https://www.codecademy.com/learn/web), and Chapter 7 of your book (it's really good!!).
+[W3Schools](http://www.w3schools.com/tags/tag_form.asp), [web searches](https://www.reddit.com/r/web_design/search?q=forms&restrict_sr=on), [codecademy](https://www.codecademy.com/learn/web), and Chapter 7 of your book (it's really good!!).
 
 ## Learning Goals
 By the end of this project, you should be familiar with several elements and attributes:
