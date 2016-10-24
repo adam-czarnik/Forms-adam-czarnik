@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>some forms > login</title>
+      <link type="text/css" rel="stylesheet" href="stylesheet.css">
+   </head>
+   <script>
+   function filled_out() {
+     if (document.getElementById('username').value != '' && document.getElementById('password').value != '') {
+     (check() && window.location.href = "document.html";)
+   }
+   else {
+     check()
+   }
+   }
+   </script>
+   <body>
+     <h1><a href="document.html">some forms.</a></h1>
+     <table><tr>
+       <td onclick="location.href='registration.html'">registration</td>
+       <td bgcolor=#f5f5f5 onclick="location.href='login.html'">login</td>
+       </tr></table>
+       <h2>usernames/emails are autocompleted</h2>
+       <form autocomplete="on">
+         <input type="text" id="username" placeholder="username or email" autocomplete="on" required>
+         <input type="password" id="password" placeholder="password" autocomplete="off" required>
+         <h2>submit</h2>
+         <input type="submit" id="submit" value="submit" onclick="filled_out()">
+       </form>
+   </body>
+</html>
