@@ -2,8 +2,12 @@ h2::selection {background: transparent;} td::selection {background: transparent;
 :focus {outline: none;}
 /*input:focus {border-color: #47a4b0;}*/
 input.blue:focus {border-color: #47a4b0;}
+::-webkit-input-placeholder {
+   color: #999999;
+}
 select.blue:focus {border-color: #47a4b0;}
 select {-webkit-appearance: none; -moz-appearance: none; appearance: none; padding-top: 20px;}
+select option:first-child {color: #999999;}
 body {
   font-family: sans-serif;
   font-weight: lighter;
