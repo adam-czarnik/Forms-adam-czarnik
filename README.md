@@ -21,3 +21,6 @@ By the end of this project, you should be familiar with several elements and att
 - `action` attribute
 - `target` attribute
 - (there are many more attributes relevant to forms)
+
+To Do:
+on the registration page, the javascript on the 'submit' button only checks for required fields. i havent gotten it to redirect AND check, so have it redirect after a successful check to 'newaccount.html'
