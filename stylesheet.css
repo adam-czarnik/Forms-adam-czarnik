@@ -65,3 +65,8 @@ input[type=radio], label {
   font-size: 150%;
   padding-top: 20px;
 }
+iframe {
+  margin: auto;
+  display: block;
+  padding: 25px;
+}
