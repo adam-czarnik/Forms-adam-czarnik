@@ -5,9 +5,20 @@
       <link type="text/css" rel="stylesheet" href="stylesheet.css">
    </head>
    <script>
-    function filled_out() {
-      check();
+    // function filled_out() {
+    //   if (document)
+    //   window.location = "newaccount.html";
+    // }
+    function onSelectChange(){
+    if (document.getElementById('squestion').value == 0){
+        document.getElementById('squestion').className = 'greyclass blue';
+    } else {
+        document.getElementById('squestion').className = 'blackclass blue'
     }
+}
+  function changeBlack() {
+    document.getElementById("datepick").style.color = "black";
+  }
     // function password() {if (document.getElementById('cpassword').value === document.getElementById('password').value) {document.getElementById('cpassword').style.color = 'black' && document.getElementById('password').style.color = 'black'} else {document.getElementById('cpassword').style.color = '#bc4b4b'}}
     </script>
    <body>
@@ -22,18 +33,18 @@
          <input type="text" id="first name" class="blue" placeholder="first name" value='' required>
          <input type="text" id="last name" class="blue" placeholder="last name" value='' required>
          <input type="email" id="email" class="blue" placeholder="email" value='' required>
-         <input type="date" id="date" oninput="document.getElementById('date').style.color = 'black'">
+         <input type="date" id="datepick" oninput="changeBlack()">
          <h2>login info</h2>
          <input type="text" id="username" class="blue" placeholder="username" value='' required>
          <input type="password" id="password" class="blue" placeholder="password" required>
          <input type="password" id="cpassword" class="blue" placeholder="confirm password" required oninput="if (document.getElementById('cpassword').value === document.getElementById('password').value) {document.getElementById('cpassword').style.color = 'black'} else {document.getElementById('cpassword').style.color = '#bc4b4b'}">
          <h2>security</h2>
          <input type="tel" maxlength=10 placeholder="phone #" min="0000000000" max="9999999999">
-         <select id="squestion" required class="blue">
-           <option disabled selected class="firstselect">security prompts</option>
-           <option>first pet</option>
-           <option>first car</option>
-           <option>first job</option>
+         <select id="squestion" onchange="onSelectChange()" required class="greyclass blue">
+           <option disabled selected value="0">security prompts</option>
+           <option value="1">first pet</option>
+           <option value="2">first car</option>
+           <option value="3">first job</option>
          </select>
          <input type="text" id="sanswer" class="blue" placeholder="security answer" required>
          <h2>misc</h2>
