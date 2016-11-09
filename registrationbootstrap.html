@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head><body>
+</body>
+   <!-- <head>
+      <title>some forms > registration</title>
+      <link type="text/css" rel="stylesheet" href="stylesheetbootstrap.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   </head>
+   <script>
+    // function filled_out() {
+    //   if (document)
+    //   window.location = "newaccount.html";
+    // }
+    function onSelectChange(){
+    if (document.getElementById('squestion').value == 0){
+        document.getElementById('squestion').className = 'greyclass blue';
+    } else {
+        document.getElementById('squestion').className = 'blackclass blue';
+    }
+}
+  function changeBlack() {
+    document.getElementById("datepick").style.color = "black";
+  }
+    // function password() {if (document.getElementById('cpassword').value === document.getElementById('password').value) {document.getElementById('cpassword').style.color = 'black' && document.getElementById('password').style.color = 'black'} else {document.getElementById('cpassword').style.color = '#bc4b4b'}}
+    </script>
+   <body>
+     <h1><a href="document.html">some forms.</a></h1>
+     <table><tr>
+       <td bgcolor=#f5f5f5 onclick="location.href='registration.html'">registration</td>
+       <td onclick="location.href='login.html'">login</td>
+       </tr></table>
+       <h2>fields that underline in blue (when selected) are required</h2>
+       <form autocomplete="off">
+         <h2>personal details</h2>
+         <input type="text" id="first name" class="blue" placeholder="first name" value='' required>
+         <input type="text" id="last name" class="blue" placeholder="last name" value='' required>
+         <input type="email" id="email" class="blue" placeholder="email" value='' required>
+         <input type="date" id="datepick" oninput="changeBlack()">
+         <h2>login info</h2>
+         <input type="text" id="username" class="blue" placeholder="username" value='' required>
+         <input type="password" id="password" class="blue" placeholder="password" required>
+         <input type="password" id="cpassword" class="blue" placeholder="confirm password" required oninput="if (document.getElementById('cpassword').value === document.getElementById('password').value) {document.getElementById('cpassword').style.color = 'black'} else {document.getElementById('cpassword').style.color = '#bc4b4b'}">
+         <h2>security</h2>
+         <input type="tel" maxlength=10 placeholder="phone #" min="0000000000" max="9999999999">
+         <select id="squestion" onchange="onSelectChange()" required class="greyclass blue">
+           <option disabled selected value="0">security prompts</option>
+           <option value="1">first pet</option>
+           <option value="2">first car</option>
+           <option value="3">first job</option>
+         </select>
+         <input type="text" id="sanswer" class="blue" placeholder="security answer" required>
+         <h2>misc</h2>
+         <input type="text" maxlength=9 placeholder="social security #">
+         <input type="text" placeholder="mothers maiden name">
+         <h2>survey</h2>
+         <label for="ib"><input type="radio" id="ib" name="survey">its beautiful</label>
+         <label for="sp"><input type="radio" id="sp" name="survey">so purrrty</label>
+         <label for="long"><input type="radio" id="long" name="survey">this form is so amazing its superior to all other forms</label>
+         <h2>submit</h2>
+         <input type="submit" id="submit" value="submit" onclick="filled_out()">
+       </form>
+       <br><br>
+   </body> -->
+</html>
